@@ -30,7 +30,7 @@ public APLRes AskPluginLoad2(Handle myself, bool late, char[] error, int err_max
 	EngineVersion engineVersion = GetEngineVersion();
 	if (engineVersion != Engine_CSS)
 	{
-		SetFailState("This plugin was made for use with Counter-Strike: Source only.");
+		LogMessage("[WARNING] This plugin was tested ONLY on Counter-Strike: Source. Your mileage may vary.");
 	}
 }
 
