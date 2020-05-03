@@ -20,7 +20,7 @@ public Plugin myinfo =
 {
 	name = PLUGIN_NAME,
 	author = "BogdanNBV",
-	description = "A plugin that tries to shed some light over sudden player disappearances",
+	description = "A plugin that tries to shed some light over sudden player disappearances.",
 	version = PLUGIN_VERSION,
 	url = "https://github.com/bogdannbv/rage-reason"
 };
@@ -47,7 +47,7 @@ public void RegisterConVars()
 
 	cvarEnabled = CreateConVar("sm_rage-reason_enabled", PLUGIN_ENABLED_DEFAULT, "Determines if the plugin should be enabled.", FCVAR_NOTIFY|FCVAR_REPLICATED);
 
-	cvarMaxSeconds = CreateConVar("sm_rage-reason_max_seconds", RAGE_MAX_SECONDS_DEFAULT, "The maximum number of seconds after a player's death to consider the disconnect a Rage Quit.", FCVAR_NOTIFY|FCVAR_REPLICATED);
+	cvarMaxSeconds = CreateConVar("sm_rage-reason_max_seconds", RAGE_MAX_SECONDS_DEFAULT, "The maximum number of seconds after a player's death to consider the disconnect a rage quit.", FCVAR_NOTIFY|FCVAR_REPLICATED);
 }
 
 public void RegisterEventHooks()
